@@ -1,0 +1,43 @@
+name: Feature request
+description: A new source, module or capability.
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      description: Describe the investigation you cannot complete today.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - New platform definition
+        - New module (phone, crypto, image, …)
+        - Detection / confidence
+        - Report / export
+        - CLI / UX
+        - Performance
+        - Documentation
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed approach
+      description: |
+        If this is a platform, include the endpoint and how you know it
+        discriminates (a claimed value and a random value that behave
+        differently). Definitions without that evidence cannot be merged.
+
+  - type: checkboxes
+    id: legal
+    attributes:
+      label: Confirmation
+      options:
+        - label: This only uses publicly reachable endpoints and does not bypass authentication.
+          required: true

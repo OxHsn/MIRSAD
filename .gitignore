@@ -1,0 +1,38 @@
+# ---------------------------------------------------------------- python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+env/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# ---------------------------------------------------------------- mirsad runtime
+# response cache (raw HTTP bodies, may contain personal data)
+.mirsad/
+# generated reports
+reports/
+out/
+*.log
+
+# ---------------------------------------------------------------- research
+# upstream clones fetched by tools/fetch_sources.py (huge, third-party)
+_research/
+
+# ---------------------------------------------------------------- local tooling
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ---------------------------------------------------------------- secrets
+.env
+.env.*
+*.pem
+config.local.*

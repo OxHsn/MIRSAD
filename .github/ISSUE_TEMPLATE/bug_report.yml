@@ -1,0 +1,59 @@
+name: Bug report
+description: Something returned a wrong result, crashed, or hung.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the report. **Do not paste personal data, API keys or full
+        reports here.** Redact targets if they are not yours.
+
+  - type: input
+    id: version
+    attributes:
+      label: MIRSAD version
+      description: Output of `mirsad --version`
+    validations:
+      required: true
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of problem is it?
+      options:
+        - False positive (reported an account that does not exist)
+        - False negative (missed an account that does exist)
+        - Crash / traceback
+        - Performance / hang
+        - Report rendering
+        - Something else
+    validations:
+      required: true
+
+  - type: textarea
+    id: command
+    attributes:
+      label: Command you ran
+      render: shell
+      placeholder: mirsad johndoe --tier 2 --depth 1
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect, and what happened instead?
+    validations:
+      required: true
+
+  - type: input
+    id: platform
+    attributes:
+      label: Platform involved (if the issue is a specific site)
+      placeholder: Example.com
+
+  - type: input
+    id: os
+    attributes:
+      label: OS and Python version
+      placeholder: Windows 11 · Python 3.12.4

@@ -1,0 +1,15 @@
+# Normalise line endings so Windows and Unix contributors don't fight
+* text=auto eol=lf
+
+*.py   text eol=lf
+*.md   text eol=lf
+*.yml  text eol=lf
+*.yaml text eol=lf
+*.toml text eol=lf
+*.json text eol=lf
+*.txt  text eol=lf
+
+# generated corpus — keep byte-identical
+*.gz   binary
+*.png  binary
+*.jpg  binary
