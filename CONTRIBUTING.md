@@ -6,7 +6,7 @@ with a strict internal contract, so a few rules keep it coherent.
 ## Setup
 
 ```bash
-git clone https://github.com/OxHsn/mirsad.git && cd mirsad
+git clone https://github.com/OxHsn/MIRSAD.git && cd mirsad
 python -m venv .venv
 . .venv/bin/activate            # Windows: .venv\Scripts\activate
 pip install -e ".[dev]"

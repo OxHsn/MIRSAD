@@ -53,7 +53,7 @@ schema so a single engine can run every definition without caring where it came 
 ## Install
 
 ```bash
-git clone https://github.com/OxHsn/mirsad.git && cd mirsad
+git clone https://github.com/OxHsn/MIRSAD.git && cd mirsad
 python -m venv .venv && . .venv/bin/activate      # Windows: .venv\Scripts\activate
 pip install -e ".[dev]"
 ```

@@ -36,9 +36,9 @@ dev = ["pytest>=8", "pytest-asyncio>=0.23", "ruff>=0.6"]
 
 [project.urls]
 Homepage = "https://github.com/OxHsn"
-Repository = "https://github.com/OxHsn/mirsad"
-Issues = "https://github.com/OxHsn/mirsad/issues"
-Changelog = "https://github.com/OxHsn/mirsad/blob/main/CHANGELOG.md"
+Repository = "https://github.com/OxHsn/MIRSAD"
+Issues = "https://github.com/OxHsn/MIRSAD/issues"
+Changelog = "https://github.com/OxHsn/MIRSAD/blob/main/CHANGELOG.md"
 
 [project.scripts]
 mirsad = "mirsad.cli:main"
